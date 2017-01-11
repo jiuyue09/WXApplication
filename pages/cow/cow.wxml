@@ -1,0 +1,19 @@
+<view class="containerr" style="height:{{topHeight}}px;">
+  <view class="top">
+    <text>345</text>
+  </view>
+  <view class="top1">
+    <text>456</text>
+    <view class="top3">
+      <text>678</text>
+    </view>
+  </view>
+  <view class="top2">
+    <view class="card One"><text>1</text></view>
+    <view class="card Two"> 1</view>
+    <view class="card Three">1</view>
+    <view class="card Four">1</view>
+    <view class="card Five">1</view>
+    <button bindtap="getCards">提交</button>
+  </view>
+</view>

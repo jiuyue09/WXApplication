@@ -1,0 +1,27 @@
+.containerr {
+    background-color: red;
+    width: 100%;
+    flex:1;
+    min-height: 100%;
+}
+.top {
+    background-color: blue;
+    flex: 1;
+    height: 10%;
+}
+.top1 {
+    flex: 1;
+    height: 80%;
+}
+.top2 {
+    background-color: green;
+    flex:1;
+    height: 10%;
+    flex-direction: row;
+    display: flex;
+}
+.card{
+    width: 15%;
+    background-color: purple;
+    align-items: center;
+}
