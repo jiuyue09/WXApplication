@@ -1,10 +1,16 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
+  <view class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text style="font-size:15px">金币{{money}}</text>
   </view>
-  <view  bindtap="textViewTap" class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="title">
+  <text class="title-mark">斗牛</text>
+  </view>
+  <view  class="usermotto">
+    <!--<text class="user-motto">{{motto}}</text>-->
+    <button class="gamestart" bindtap="gameStartTapClick">开始游戏</button>
+    <button class="getmoney" bindtap="getmoneyTapClick">领取金币</button>
   </view>
 </view>

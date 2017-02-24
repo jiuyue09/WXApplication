@@ -1,27 +1,231 @@
 .containerr {
-    background-color: red;
-    width: 100%;
-    flex:1;
-    min-height: 100%;
+  background-color: green;
+  width: 100%;
+  flex: 1;
+  min-height: 100%;
 }
+
 .top {
-    background-color: blue;
-    flex: 1;
-    height: 10%;
+  height: 15%;
 }
+
+.topleft {
+  height: 60%;
+  flex-direction: row;
+  display: flex;
+}
+
+.topleftcard {
+  width: 12%;
+  border: 1rpx solid #999;
+  align-items: center;
+  display: flex;
+}
+
+.topright {
+  height: 40%;
+  align-items: center;
+  display: flex;
+}
+
 .top1 {
-    flex: 1;
-    height: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
 }
+
+.left {
+  width: 35%;
+  height: 100%;
+}
+
+.right {
+  width: 35%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+.center {
+  width: 30%;
+  background-color: red;
+}
+
+.centerlefttop {
+  width: 100%;
+  height: 50%;
+}
+
+.centerleftbottom {
+  width: 100%;
+  height: 50%;
+}
+
+.centerrighttop {
+  width: 100%;
+  height: 50%;
+}
+
+.centerrightbottom {
+  width: 100%;
+  height: 50%;
+}
+
+.centertop {
+  width: 100%;
+  height: 33%;
+  background-color: black;
+}
+
+.centermiddle {
+  width: 100%;
+  height: 34%;
+  background-color: wheat;
+}
+
+.centerbottom {
+  width: 100%;
+  height: 33%;
+  background-color: blue;
+  align-items: center;
+  display: flex;
+}
+
+.centerbottominfo {
+  /*background-color: rebeccapurple;*/
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.robbanker {
+  font-size: 13px;
+  /*height: 30px;*//*width: 100px;*//*background-color: rebeccapurple;*/
+}
+
+.notrobbanker {
+  font-size: 13px;
+  margin-left: 2px;
+  /*height: 30px;*//*width: 100px;*//*background-color: rebeccapurple;*/
+}
+
+.centerbottomone {
+  background-color: rebeccapurple;
+  width: 100%;
+  height: 33%;
+}
+
+.centerbottomtwo {
+  background-color: gainsboro;
+  width: 100%;
+  height: 34%;
+}
+
+.centerbottomthree {
+  background-color: grey;
+  width: 100%;
+  height: 33%;
+}
+
 .top2 {
-    background-color: green;
-    flex:1;
-    height: 10%;
-    flex-direction: row;
-    display: flex;
+  background-color: white;
+  height: 25%;
 }
-.card{
-    width: 15%;
-    background-color: purple;
-    align-items: center;
+
+.top12 {
+  height: 50%;
+  flex-direction: row;
+  display: flex;
+}
+
+.top13 {
+  height: 50%;
+  flex-direction: row;
+  display: flex;
+}
+
+.headimage {
+  display: flex;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+}
+
+.headicon {
+  width: 100%;
+  display: flex;
+  flex-basis: row;
+  align-items: center;
+}
+
+.nickname {
+  margin-bottom: 20rpx;
+  font-size: 13px;
+}
+
+.money {
+  font-size: 13px;
+}
+
+.headCenter {
+  align-items: center;
+  display: flex;
+  margin-left: 20px;
+  width: 20%;
+}
+
+.headright {
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.headtime {
+  margin: 0 auto;
+}
+
+.card {
+  width: 20%;
+  align-items: center;
+  display: flex;
+  border: 1rpx solid #999;
+}
+
+.persononecard {
+  height: 50%;
+  flex-direction: row;
+  display: flex;
+}
+
+.cardsforpersonone {
+  width: 20%;
+  display: flex;
+  border: 1rpx solid #999;
+  align-items: center;
+}
+
+.persononeinfo {
+  height: 50%;
+  flex-direction: row;
+  display: flex;
+}
+
+.cardcontentView {
+  margin: 0 auto;
+}
+
+.oneinfoleft {
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.oneinfoleftdesc {
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.cardsforpersononeceter {
+  margin: 0 auto;
 }

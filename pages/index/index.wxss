@@ -1,21 +1,47 @@
 /**index.wxss**/
+
 .userinfo {
   display: flex;
   flex-direction: column;
+  width: 50%;
   align-items: center;
 }
 
 .userinfo-avatar {
+  display: flex;
   width: 128rpx;
   height: 128rpx;
   margin: 20rpx;
   border-radius: 50%;
+  /*align-items: center;*/
 }
 
 .userinfo-nickname {
   color: #aaa;
 }
 
-.usermotto {
-  margin-top: 200px;
+.title {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  /*background-color: red;*/
+}
+
+.title-mark {
+  margin: 0 auto;
+}
+
+/*.usermotto {
+  background-color: green;
+}*/
+.gamestart {
+   width: 100px;
+  height: 44px;
+}
+
+
+.getmoney {
+  margin-top: 44px;
+  width: 100px;
+  height: 44px;
 }

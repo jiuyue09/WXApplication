@@ -1,19 +1,166 @@
 <view class="containerr" style="height:{{topHeight}}px;">
   <view class="top">
-    <text>345</text>
+    <view class="topright">
+      <view class="cardcontentView" style="font-size:15px">{{persons[5].typeChinese}}</view>
+    </view>
+    <view class="topleft">
+      <block wx:for="{{persons[5].cardsDesc}}" wx:for-item="itemName">
+        <view class="topleftcard">
+          <view class="cardcontentView" style="font-size:13px">{{itemName["desc"]}}</view>
+        </view>
+      </block>
+    </view>
   </view>
   <view class="top1">
-    <text>456</text>
-    <view class="top3">
-      <text>678</text>
+    <view class="left">
+      <view class="centerlefttop">
+        <view class="centerlefttop1" style="height:25%"></view>
+        <view style="height:50%">
+          <view class="persononeinfo">
+            <view style="width:100%"></view>
+            <view class="oneinfoleft">
+              <view class="oneinfoleftdesc">{{persons[1].typeChinese}}</view>
+            </view>
+            <view style="width:100%"></view>
+          </view>
+          <view class="persononecard">
+            <block wx:for="{{persons[1].cardsDesc}}" wx:for-item="itemName">
+              <view style="font-size:9px" class="cardsforpersonone">
+                <view class="cardsforpersononeceter">
+                  {{itemName["desc"]}}
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+        <view style="height:25%"></view>
+      </view>
+      <view class="centerleftbottom">
+        <view style="height:25%">
+        </view>
+        <view style="height:50%">
+          <view class="persononeinfo">
+            <view style="width:100%"></view>
+            <view class="oneinfoleft">
+              <view class="oneinfoleftdesc">{{persons[2].typeChinese}}</view>
+            </view>
+            <view style="width:100%"></view>
+          </view>
+          <view class="persononecard">
+            <block wx:for="{{persons[2].cardsDesc}}" wx:for-item="itemName">
+              <view style="font-size:9px" class="cardsforpersonone">
+                <view class="cardsforpersononeceter">
+                  {{itemName["desc"]}}
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="center">
+      <view class="centertop"></view>
+      <view class="centermiddle"></view>
+      <view class="centerbottom">
+        <view class="centerbottomone"></view>
+        <view class="centerbottomtwo">
+          <view class="centerbottominfo" hidden="{{isShowBanker}}">
+            <button class="robbanker" bindtap="robTapClick">抢庄</button>
+            <button class="notrobbanker" bindtap="noRobTapClick">不抢</button>
+          </view>
+        </view>
+        <view class="centerbottomthree">
+          <view hidden="{{!persons[0].banker}}" style="font-size:15px">庄</view>
+        </view>
+      </view>
+    </view>
+    <view class="right">
+      <view class="centerrighttop">
+        <view style="height:25%"></view>
+        <view style="height:50%">
+          <view class="persononeinfo">
+            <view style="width:100%"></view>
+            <view class="oneinfoleft">
+              <view class="oneinfoleftdesc">{{persons[3].typeChinese}}</view>
+            </view>
+            <view style="width:100%"></view>
+          </view>
+          <view class="persononecard">
+            <block wx:for="{{persons[3].cardsDesc}}" wx:for-item="itemName">
+              <view style="font-size:9px" class="cardsforpersonone">
+                <view class="cardsforpersononeceter">
+                  {{itemName["desc"]}}
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+      <view class="centerrightbottom">
+        <view style="height:25%"></view>
+        <view style="height:50%">
+          <view class="persononeinfo">
+            <view style="width:100%"></view>
+            <view class="oneinfoleft">
+              <view class="oneinfoleftdesc">{{persons[4].typeChinese}}</view>
+            </view>
+            <view style="width:100%"></view>
+          </view>
+          <view class="persononecard">
+            <block wx:for="{{persons[4].cardsDesc}}" wx:for-item="itemName">
+              <view style="font-size:9px" class="cardsforpersonone">
+                <view class="cardsforpersononeceter">
+                  {{itemName["desc"]}}
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
     </view>
   </view>
   <view class="top2">
-    <view class="card One"><text>1</text></view>
-    <view class="card Two"> 1</view>
-    <view class="card Three">1</view>
-    <view class="card Four">1</view>
-    <view class="card Five">1</view>
-    <button bindtap="getCards">提交</button>
+    <view class="top12">
+      <view class="headicon">
+        <image class="headimage" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <view class="headnickname">
+          <view class="nickname">{{userInfo.nickName}}</view>
+          <view class="money">¥{{persons[0].totalMoney}}</view>
+        </view>
+      </view>
+      <view class="headCenter">
+        <view style="font-size:15px">{{persons[0].typeChinese}}</view>
+      </view>
+      <view class="headright" bindtap="onclick">
+        <view class="headtime" hidden="{{isShowCountTime}}">{{timer}}</view>
+      </view>
+    </view>
+    <view class="top13">
+      <view class="card One">
+
+        <!--<view clsss="textone">1</view>-->
+        <view class="cardcontentView">{{persons[0].cardsDesc[0]["desc"]}}</view>
+      </view>
+      <view class="card Two">
+
+        <!--<text clsss= "cardcontent one">1♥️</text>-->
+        <view class="cardcontentView">{{persons[0].cardsDesc[1]["desc"]}}</view>
+      </view>
+      <view class="card Three">
+
+        <!--<text clsss= "cardcontent one">1♣️</text>-->
+        <view class="cardcontentView">{{persons[0].cardsDesc[2]["desc"]}}</view>
+      </view>
+      <view class="card Four">
+
+        <!--<text clsss= "cardcontent one">1♠️</text>-->
+        <view class="cardcontentView">{{persons[0].cardsDesc[3]["desc"]}}</view>
+      </view>
+      <view class="card Five">
+
+        <!--<text clsss= "cardcontent one">1♦️</text>-->
+        <view class="cardcontentView">{{persons[0].cardsDesc[4]["desc"]}}</view>
+      </view>
+    </view>
   </view>
 </view>
